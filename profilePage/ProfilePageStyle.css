@@ -236,16 +236,18 @@ body {
 }
 
 .addressContainer {
-    width: 500px;
+    width: 60%;
     height: 200px;
     display: block;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -30%;
     position: absolute;
 }
 
-.addressImage {
+.homestayImage {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
