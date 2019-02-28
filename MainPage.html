@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fluffy</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./MainPage.css">
+	<link rel="stylesheet" type="text/css" href="./postModal.css">
+	<link href='https://fonts.googleapis.com/css?family=Crete Round' rel='stylesheet'>
+</head>
+
+<body>
+	<!-- fix positioned div-->
+	<!-- Make Post Modal -->
+	<div id="MakePostModal" class="modal">
+		<div id="MakePostModal-Container">
+			<div id="MakePostModal-Picture"></div>
+			<div id="MakePostModal-PostTitle">
+				<div class="circle"></div>
+				<input type="text" name="postTitle" placeholder="Write something...">
+				
+				<div class="UserPostButtonDiv">Post</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="FluffyApplication">
+		<!-- Fluffy Application page-->
+		<div id="UserPageHeader">
+			<div id="HeaderText">Fluffy</div>
+			<div id="NavBar">
+				<!-- piece of elements for one drop down menu-->
+				<div class="DropDownMenu">
+					<div class="DropDownTitle">AWWWW</div>
+					<div class="DropDownMenuContent">
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+					</div>
+				</div>
+				<!-- end of one drop down menu-->
+				<div class="DropDownMenu">
+					<div class="DropDownTitle">Account</div>
+					<div class="DropDownMenuContent">
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+					</div>
+				</div>
+
+				<div class="DropDownMenu">
+					<div class="DropDownTitle">Contact Us</div>
+					<div class="DropDownMenuContent">
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+						<div class="DropDownItem"><a href="#"> ABC</a></div>
+					</div>
+				</div>
+			</div>
+			<!-- User Post Button-->
+			<div class="UserPostButtonDiv">
+				Post
+			</div>
+			<!-- Search For Post searchBar-->
+			<div id="UserSearchButton">
+				<input type="text" name="searchPost" placeholder="Search for a post">
+				<img src="searchImage.png" alt="searchImage.png">
+			</div>
+		</div>
+
+		<div id="UserPagePictureSlids">
+			<img src="./PictureSlide.jpg">
+		</div>
+
+		<div id="FluffyLogoContainer">
+			<div id="FluffyLogo">
+				<img src="./FluffyLogo.png" alt="LogoImage">
+			</div>
+		</div>
+
+		<div id="UserPostings">
+			<table id="UserPostingsTable">
+				<tbody>
+
+					<tr>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost1.jpg">
+							</div>
+							<div class="PostingTitle">miamiamia</div>
+						</td>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost2.jpg">
+							</div>
+							<div class="PostingTitle">Posting 2</div>
+						</td>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost3.jpg">
+							</div>
+							<div class="PostingTitle">Posting 3</div>
+						</td>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost4.jpg">
+							</div>
+							<div class="PostingTitle">Posting 4</div>
+						</td>
+
+
+					</tr>
+
+					<tr>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost5.jpg">
+							</div>
+							<div class="PostingTitle">Posting 5</div>
+						</td>
+						<td class="Posting">
+							<div class="PostingImage">
+								<img src="./samplePosts/samplePost6.jpg">
+							</div>
+							<div class="PostingTitle">Posting 6</div>
+						</td>
+						
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+		<div id="Fluffy footer"></div>
+
+
+		<!-- JS files -->
+		<script type="text/javascript" src="./MainPage.js"></script>
+		<script type="text/javascript" src="./loadPostings.js"></script>
+		<script type="text/javascript" src="./PostingModal.js"></script>
+	</body>
+	</html>

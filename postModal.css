@@ -1,0 +1,55 @@
+#MakePostModal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(248,248,248,0.8);
+}
+
+#MakePostModal-Container{
+	height: 45vh;
+	width: 45vw;
+	margin-top: 27.5vh;
+	margin-left: 27.5vw;
+}
+
+#MakePostModal-Picture{
+	opacity: 100;
+	height: 75%;
+	background-color: #bdbec0;
+	border: 1px solid #9e9e9e;
+	border-radius: 5%;
+}
+
+#MakePostModal-PostTitle{
+	padding-top: 2.5%;
+	height: 10%;
+	background-color:white;
+}
+
+.circle{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 45%;
+	background-color: #bdbec0;
+}
+
+#MakePostModal-PostTitle input{
+	border-width: 0px;
+	margin-left: 10px;
+	height: 70%;
+	width: 70%;
+}
+
+#MakePostModal-Container .UserPostButtonDiv{
+	margin-left: 35%;
+	margin-top: 20px;
+	background-color: rgba(248,248,248);
+}
+
+
