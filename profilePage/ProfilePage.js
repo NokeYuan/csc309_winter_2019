@@ -1,3 +1,6 @@
+
+document.getElementById("defaultOpen").click();
+
 function openPosts(e, eventName) {
     var i;
     const tabcontent = document.getElementsByClassName('tabcontent');
