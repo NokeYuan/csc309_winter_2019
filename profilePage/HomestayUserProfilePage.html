@@ -37,38 +37,48 @@
         <img class="verifiedIcon" src="verifiedIcon.png">
     </div>
     <div class="tabContainer">
-        <div class="tab">
-            <button type="button" class="tablinks"><span class="tabText">Posts</span></button>
-            <button type="button" class="tablinks"><span class="tabText">Homestay</span></button>
+        <div class="tab" id="tab">
+            <button type="button" class="tablinks" onclick="openPosts(event, 'Posts')"><span class="tabText">Posts</span></button>
+            <button type="button" class="tablinks" onclick="openHomestay(event, 'Homestay')"><span class="tabText">Homestay</span></button>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div id="Posts" class="tabcontent">
+        <div class="postContainer">
+            <div class="row">
+                <div class="column">
+                    <div class="post">
+                            <div class="postImageContainer">
+                                <img class="postImage" src="IMG_4537.jpg">
+                            </div>
+                            <div class="postTextContainer">
+                                <span class="postText">Cuteness here...</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="postContainer">
-        <div class="row">
-            <div class="column">
-                <div class="post">
-                        <div class="postImageContainer">
-                            <img class="postImage" src="IMG_4537.jpg">
-                        </div>
-                        <div class="postTextContainer">
-                            <span class="postText">Cuteness here...</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="column">
-                <div class="post">
-                </div>
-            </div>
-            <div class="column">
-                <div class="post">
-                </div>
-            </div>
-            <div class="column">
-                <div class="post">
-                </div>
+    <div id="Homestay" class="tabContent">
+        <div class="postContainer">
+            <div class="addressContainer">
+                <img class="addressImage" src="address.jpg">
             </div>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="csc309-Jan28.js"></script> -->
+    <script type="text/javascript" src="ProfilePage.js"></script>
   </body>
 </html>
