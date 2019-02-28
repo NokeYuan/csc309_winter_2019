@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Project: User Info Edit Layout</title>
+
+	<link rel="stylesheet" type="text/css" href="profile_edit.css">
+
+</head>
+
+<body>
+
+	<div id="header">
+
+		<div class="container">
+
+			<div id="brand">Fluffy</div>
+
+			<ul>
+
+				<li>
+
+					<a class="navButton" href="">HOME</a>
+
+				</li>
+
+				<li>
+
+					<a class="navButton" href="">ACCOUNT</a>
+
+				</li>
+
+				<li>
+
+					<a class="navButton" href="">CONTACT US</a>
+
+				</li>
+
+				<li class="searchForm">
+
+					<input id="searchButton" type="text" name="search" placeholder="Search..">
+
+					<button id="searchIcon" type="submit"></button>
+
+					<!--<input id="searchIcon" src="./searchIcon.png" type="image" name="submit"> -->
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div id="background">
+
+		<img src="./bannerPic.jpg" class="bgPic">
+
+		<div class="updateBgContainer">
+
+			<button id="changeBg">
+
+				<img src="./addIcon.png" class="addIcon">Change Background
+
+			</button>
+
+			<input type="file" id="selectImage" accept="image/*">
+
+		</div>	
+
+	</div>
+
+	<div id="avatarContainer">
+		<img src="./avatar.jpg" class="avatar">
+		<div class="addButtonContainer">
+			<button id="changeIcon" type="submit">
+				<img src="./addIcon.png" class="addIcon">
+			</button>
+		</div>
+	</div>	
+
+	
+	<div id="userProfile">
+
+		<div class="personInfoForm">
+
+			<ul>
+
+				<li class="info">about you</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="userName" value="User Name: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="firstName" value="First Name: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="lastName" value="Last Name: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="dob" value="DoB: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="email" value="Email Address: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+					<input id="infoType" type="text" name="city" value="City: ">
+				</li>
+				<li class="infoDetail"> 
+					<input id="infoType" type="text" name="country" value="Country: ">
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="petsInfoForm">
+			<ul>
+
+				<li class="info">your furry family</li>
+
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="petName" value="Name: ">
+
+				</li>
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="petDob" value="DoB: ">
+
+				</li>
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="species" value="Species: ">
+
+				</li>
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="gender" value="Gender: ">
+
+				</li>
+				<li class="infoDetail"> 
+
+					<input id="infoType" type="text" name="spayed" value="Spayed/Neuterd: ">
+
+				</li>
+
+				<li class="infoDetail"> 
+					<input id="infoType" type="text" name="breed" value="Breed: ">
+				</li>
+				<li class="infoDetail"> 
+					<input id="infoType" type="text" name="weight" value="Weight: ">
+				</li>
+				<li class="infoDetail"> 
+					<input id="infoType" type="text" name="color" value="Color: ">
+				</li>
+				<li class="infoDetail">
+					<button id="addPet" type="submit">
+						<img src="./addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
+					</button>
+				</li>
+			</ul>					
+		</div>
+
+	</div>	
+
+	<div id="saveButton">
+
+		<button id="saveText" type="submit">Save</button>
+
+	</div>
+	<script type="text/javascript" src="./profile_edit.js"></script>
+</body>
+
+</html>
