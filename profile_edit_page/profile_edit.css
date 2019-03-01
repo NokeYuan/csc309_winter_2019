@@ -171,7 +171,7 @@ a {
 
 
 
-.bgPic {
+#bgPic {
 
 	display: block;	
 
@@ -271,7 +271,7 @@ a {
 
 
 
-.avatar {
+#avatar {
 
 	display: block;
 
@@ -363,6 +363,29 @@ a {
 	text-align: center;
 }
 
+#deletePetButton {
+	
+	width: 25px;
+
+	height: 25px;
+
+	border-radius: 50%;
+
+	border: none;
+
+	background: url(./deleteIcon2.png) no-repeat;
+
+	background-size: 100%;
+
+	opacity: 0.1;
+
+}
+
+#deletePetButton:hover {
+	opacity: 1;
+}
+
+
 .infoDetail {
 	/*height: 13%;*/
 	width: 90%;
@@ -395,6 +418,7 @@ a {
 
 }
 
+
 #addPet {
 	position: relative;
 	cursor: pointer;
@@ -425,6 +449,7 @@ a {
 	font-weight: bold;
 	color: #778899;
 }
+
 
 #addPet:hover {
 	opacity: 1.5;

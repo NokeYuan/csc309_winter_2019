@@ -59,7 +59,7 @@
 
 	<div id="background">
 
-		<img src="./bannerPic.jpg" class="bgPic">
+		<img src="./bannerPic.jpg" id="bgPic">
 
 		<div class="updateBgContainer">
 
@@ -69,18 +69,19 @@
 
 			</button>
 
-			<input type="file" id="selectImage" accept="image/*">
+			<input type="file" id="selectImage" accept="image/*" onchange="previewBannerImg()">
 
 		</div>	
 
 	</div>
 
 	<div id="avatarContainer">
-		<img src="./avatar.jpg" class="avatar">
+		<img src="./avatar.jpg" id="avatar">
 		<div class="addButtonContainer">
-			<button id="changeIcon" type="submit">
+			<button id="changeIcon">
 				<img src="./addIcon.png" class="addIcon">
 			</button>
+			<input type="file" id="selectIcon" accept="image/*" onchange="previewIconImg()" hidden />
 		</div>
 	</div>	
 
@@ -136,7 +137,9 @@
 		<div class="petsInfoForm">
 			<ul>
 
-				<li class="info">your furry family</li>
+				<li class="info">
+					your furry family <button id="deletePetButton"></button>
+				</li>
 
 				<li class="infoDetail"> 
 
@@ -174,7 +177,7 @@
 					<input id="infoType" type="text" name="color" value="Color: ">
 				</li>
 				<li class="infoDetail">
-					<button id="addPet" type="submit">
+					<button id="addPet" onclick="addPetForm()">
 						<img src="./addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
 					</button>
 				</li>
