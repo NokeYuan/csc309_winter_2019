@@ -1,0 +1,131 @@
+/**{
+	border: 1px solid black;
+}*/
+
+
+body{
+	margin-top: 0px;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+
+#HeaderText, .UserPostButtonDiv{
+	display: inline-block;
+}
+
+/* Application background color */
+#FluffyApplication{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #f8f8f8;
+}
+
+/* User Post Button */
+.UserPostButtonDiv{
+	color: #9b9696;
+	background-color: #ffd86a;
+	border-radius: 45%;
+	text-align: center;
+	font-size: 250%;
+	width: 150px;
+}
+
+
+/* Search Bar */
+#UserSearchButton{
+	float: right;
+
+	margin-right: 8%;
+	margin-top: 20px;
+	height: 45px;
+}
+
+#UserSearchButton input{
+	position: relative;
+	top: -23px;
+
+	width: 300px;
+	height: inherit;
+
+	padding: 2px 0px 2px 5px;
+	border-radius: 15%
+}
+
+#UserSearchButton input:focus{
+	outline: none;
+}
+
+#UserSearchButton img{
+	height: inherit;
+	object-fit: cover;
+}
+
+/* Picture slid */
+#UserPagePictureSlids{
+	height: 450px;
+	width: inherit;
+}
+
+#UserPagePictureSlids img{
+	height: 100%;
+	width: 100%;
+}
+
+/* Fluffy Logo */
+#FluffyLogoContainer{
+	position: relative;
+}
+
+#FluffyLogo{
+	position: absolute;
+	width: 700px;
+	height: 180px;
+	left: 50%;
+	margin-left: -350px;
+	top: -150px;
+}
+
+#FluffyLogo img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* User postings */
+#UserPostings{
+	width: 100%;
+	margin-top: 40px;
+}
+
+#UserPostingsTable{
+	border-collapse: separate;
+	border-spacing: 3px 1px;
+}
+
+.Posting{
+	height: 100%;
+	width: 20%;
+}
+
+.PostingImage{
+	height: 180px;
+}
+
+.PostingImage img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.PostingTitle{
+	height: 70px;
+
+	padding-top: 3px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 180%;
+	font-weight: bold;
+	font-family: 'Lucida Grande';
+
+
+}
