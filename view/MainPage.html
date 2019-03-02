@@ -3,72 +3,67 @@
 <head>
 	<title>Fluffy</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./MainPage.css">
-	<link rel="stylesheet" type="text/css" href="./postModal.css">
-	<link rel="stylesheet" type="text/css" href="./HeaderNavBar.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/index.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/MainPage.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/postModal.css">
 </head>
 
 <body>
 	<!-- fix positioned div-->
 	<!-- Make Post Modal -->
-
-
-
-
-
 	<div id="MakePostModal" class="modal">
 		<div id="MakePostModal-Container">
 			<div id="MakePostModal-Picture">
-				<img class="AddFilePic" src="./postModalAddPic.png">
+				<img class="AddFilePic" src="../Image/postModalAddPic.png">
 			</div>
 			<div id="MakePostModal-PostTitle">
-				<img class="circle" src="./postModalSearchCircle.png">
+				<img class="circle" src="../Image/postModalSearchCircle.png">
 				<input type="text" name="postTitle" placeholder="Write something...">
 			</div>
 			<div id="MakePostModal-Post" class="UserPostButtonDiv">Post</div>
 		</div>
 	</div>
+
+	<!-- Fluffy Application page-->
 	<div id="FluffyApplication">
-		<!-- Fluffy Application page-->
 		<div id="UserPageHeader">
-			<div id="HeaderText">Fluffy</div>
 			<div id="header">
-					<div class="container">
-						<div id="brand">Fluffy</div>
-						<ul>
-							<li>
-								<a class="navButton" href="./MainPage.html">HOME</a>
-							</li>
-							<li>
-								<a class="navButton" href="./HomestayUserProfilePage.html">ACCOUNT</a>
-							</li>
-							<li>
-								<a class="navButton" href="">CONTACT US</a>
-							</li>
-							<li class="searchForm">
-								<input id="searchButton" type="text" name="search" placeholder="Search..">
-								<button id="searchIcon" type="submit"></button>							</li>
-						</ul>
-					</div>
+				<div class="container">
+					<div id="brand">Fluffy</div>
+					<ul>
+						<li>
+							<a class="navButton" href="./MainPage.html">HOME</a>
+						</li>
+						<li>
+							<a class="navButton" href="./HomestayUserProfilePage.html">ACCOUNT</a>
+						</li>
+						<li>
+							<a class="navButton" href="">CONTACT US</a>
+						</li>
+						<li>
+							<!-- User Post Button-->
+							<div class="UserPostButtonDiv">
+								Post
+							</div>
+						</li>
+						<li class="searchForm">
+							<input id="searchButton" type="text" name="search" placeholder="Search..">
+							<button id="searchIcon" type="submit"></button>
+							<!--<input id="searchIcon" src="./searchIcon.png" type="image" name="submit"> -->
+						</li>
+					</ul>
 				</div>
-			<!-- User Post Button-->
-			<div class="UserPostButtonDiv">
-				Post
 			</div>
-			<!-- Search For Post searchBar-->
-			<div id="UserSearchButton">
-				<input type="text" name="searchPost" placeholder="Search for a post">
-				<img src="searchImage.png" alt="searchImage.png">
-			</div>
+
 		</div>
 
 		<div id="UserPagePictureSlids">
-			<img src="./PictureSlide.jpg">
+			<img src="../Image/PictureSlide.jpg">
 		</div>
 
 		<div id="FluffyLogoContainer">
 			<div id="FluffyLogo">
-				<img src="./FluffyLogo.png" alt="LogoImage">
+				<img src="../Image/FluffyLogo.png" alt="LogoImage">
 			</div>
 		</div>
 
@@ -78,25 +73,25 @@
 					<tr>
 						<td class="Posting">
 							<div class="PostingImage">
-								<img src="./samplePosts/samplePost1.jpg">
+								<img src="../Image/samplePost1.jpg">
 							</div>
 							<div class="PostingTitle">miamiamia</div>
 						</td>
 						<td class="Posting">
 							<div class="PostingImage">
-								<img src="./samplePosts/samplePost2.jpg">
+								<img src="../Image/samplePost2.jpg">
 							</div>
 							<div class="PostingTitle">Posting 2</div>
 						</td>
 						<td class="Posting">
 							<div class="PostingImage">
-								<img src="./samplePosts/samplePost3.jpg">
+								<img src="../Image/samplePost3.jpg">
 							</div>
 							<div class="PostingTitle">Posting 3</div>
 						</td>
 						<td class="Posting">
 							<div class="PostingImage">
-								<img src="./samplePosts/samplePost4.jpg">
+								<img src="../Image/samplePost4.jpg">
 							</div>
 							<div class="PostingTitle">Posting 4</div>
 						</td>
@@ -105,7 +100,7 @@
 					<tr>
 						<td class="Posting">
 							<div class="PostingImage">
-								<img src="./samplePosts/samplePost5.jpg">
+								<img src="../Image/samplePost5.jpg">
 							</div>
 							<div class="PostingTitle">Posting 5</div>
 						</td>
@@ -116,13 +111,13 @@
 		</div>
 	</div>
 
-	<img src="./sampleModal.jpg">
+	<img src="../Image/sampleModal.jpg">
 	<div id="Fluffy footer"></div>
 
 
 	<!-- JS files -->
-	<script type="text/javascript" src="./PostingManager.js"></script>
-	<script type="text/javascript" src="./PostingModal.js"></script>
-	<script type="text/javascript" src="./MainPage.js"></script>
+	<script type="text/javascript" src="../js/PostingManager.js"></script>
+	<script type="text/javascript" src="../js/PostingModal.js"></script>
+	<script type="text/javascript" src="../js/MainPage.js"></script>
 </body>
 </html>
