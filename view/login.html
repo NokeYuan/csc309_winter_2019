@@ -2,36 +2,22 @@
 <html lang="en">
  <head>
  	<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="loginStyle.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/loginStyle.css">
 
  </head>
 
  <body>
    <!-- Top bar with same style -->
-   <div id="header">
-   <div class="container">
-     <div id="brand">Fluffy</div>
-     <ul>
-       <li>
-         <a class="navButton" href="">HOME</a>
-       </li>
-       <li>
-         <a class="navButton" href="">ACCOUNT</a>
-       </li>
-       <li>
-         <a class="navButton" href="">CONTACT US</a>
-       </li>
-       <li class="searchForm">
-         <input id="searchButton" type="text" name="search" placeholder="Search..">
-         <button id="searchIcon" type="submit"></button>
-       </li>
-     </ul>
-   </div>
+  <div id="header">
+    <div class="container">
+      <div id="brand">Fluffy</div>
+
+    </div>
   </div>
 
   <!-- Top background -->
   <div id="background">
-      <img src="./dogPic.jpg" id="bgPic">
+      <img src="../Image/dogPic.jpg" id="bgPic">
   </div>
 
 
@@ -70,27 +56,22 @@
 
 
         <li class="infoDetail">
-            <button type="button" id = "signUpButton"><span class="infoText" style="text-align: center; font-size: 90%;">Sign Up</span></button>
+          <button type="button" id = "signUpButton"><a href="./MainPage.html">Sign Up</a></button>
         </li>
 
         <li class="infoDetail">
           <span style=" font-size:1%; margin-left: 80px;" class="infoText">Already have an account?</span>
-          <button id="loginButton"><a href="./MainPage.html"> Log in</a></button>
+          <button id="loginButton">Log in</button>
         </li>
 			</ul>
 
       </div>
     </div>
 
-
-
   </div>
 
 
-
-
-
-<script type="text/javascript" src="loginJs.js"></script>
+<script type="text/javascript" src="../js/loginJs.js"></script>
 
 
 
