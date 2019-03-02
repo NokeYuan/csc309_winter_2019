@@ -183,6 +183,8 @@ a {
 
 	height: 100%;
 
+	object-fit: cover;
+
 }
 
 
@@ -292,10 +294,10 @@ a {
 }
 
 
-.addButtonContainer {
+/*.addButtonContainer {
 	position: relative;
 	display: block;
-}
+}*/
 
 #changeIcon {
 
@@ -303,17 +305,15 @@ a {
 
 	position: absolute;
 
-	left: 50%;
-	
-	top: 50%;
+	left: 47%;
 
-	margin-top: 80px;
+	top: 50%;
 
 	background-color: transparent;
 
 	color: white;
 
-	padding: 12px 24px;
+	/*padding: 12px 24px;*/
 
 	border: none;
 
@@ -321,7 +321,7 @@ a {
 
 	cursor: pointer;
 
-	opacity: 0.1;
+	opacity: 1;
 }
 
 #changeIcon:hover {
