@@ -85,7 +85,7 @@ function addPetForm() {
 						</li>
 						<li class="infoDetail">
 							<button id="addPet" onclick="addPetForm()">
-								<img src="./addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
+								<img src="../Image/addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
 							</button>
 						</li>`;
 

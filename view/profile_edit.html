@@ -9,7 +9,7 @@
 
 	<title>Project: User Info Edit Layout</title>
 
-	<link rel="stylesheet" type="text/css" href="profile_edit.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/profile_edit.css">
 
 </head>
 
@@ -38,13 +38,13 @@
 
 	<div id="background">
 
-		<img src="./bannerPic.jpg" id="bgPic">
+		<img src="../Image/bannerPic.jpg" id="bgPic">
 
 		<div class="updateBgContainer">
 
 			<button id="changeBg">
 
-				<img src="./addIcon.png" class="addIcon">Change Background
+				<img src="../Image/addIcon.png" class="addIcon">Change Background
 
 			</button>
 
@@ -55,9 +55,9 @@
 	</div>
 
 	<div id="avatarContainer">
-		<img src="./avatar.jpg" id="avatar">
+		<img src="../Image/avatar.jpg" id="avatar">
 		<button id="changeIcon">
-			<img src="./addIcon.png" class="addIcon">
+			<img src="../Image/addIcon.png" class="addIcon">
 		</button>
 		<input type="file" id="selectIcon" accept="image/*" onchange="previewIconImg()" hidden />
 	</div>	
@@ -155,20 +155,19 @@
 				</li>
 				<li class="infoDetail">
 					<button id="addPet" onclick="addPetForm()">
-						<img src="./addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
+						<img src="../Image/addIcon.png" class="addPetIcon"><span class="addPetText">Add another pet</span>
 					</button>
 				</li>
 			</ul>					
 		</div>
-
 	</div>	
 
 	<div id="saveButton">
 
-		<button id="saveText" type="submit"><a href="./HomestayUserProfilePage.html">Save</a></button>
+		<button id="saveText" type="submit"><a href="./HomestayUserProfilePage.html" id="saveLink">Save</a></button>
 
 	</div>
-	<script type="text/javascript" src="./profile_edit.js"></script>
+	<script type="text/javascript" src="../js/profile_edit.js"></script>
 </body>
 
 </html>
