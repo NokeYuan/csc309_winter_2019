@@ -1,0 +1,14 @@
+.contactUsContainer {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 400px;
+    display: block;
+}
+
+.contactUsImage {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: scale-down;
+}
