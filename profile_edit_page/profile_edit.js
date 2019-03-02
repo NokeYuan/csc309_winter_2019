@@ -37,9 +37,6 @@ function previewIconImg() {
 }
 
 const profiles = document.querySelector("#userProfile");
-//var addPetButton = document.querySelector("#addPet");
-
-//addPetButton.addEventListener('click', addPetForm);
 
 
 function addPetForm() {
@@ -48,7 +45,7 @@ function addPetForm() {
 
 	const formList = document.createElement("ul");
 	formList.innerHTML = `<li class="info">
-							your furry family <button id="deletePetButton"></button>
+							your furry family <button id="deletePetButton" onclick="delPetForm(this)"></button>
 						</li>
 
 						<li class="infoDetail"> 
@@ -96,11 +93,17 @@ function addPetForm() {
 	profiles.appendChild(newForm);
 } 
 
-const delPetButton = document.querySelector("#deletePetButton");
-deletePetButton.addEventListener('click', delPetForm);
 
-function delPetForm(e) {
-	e.preventDefault();
-	const petToRemove = e.target.parentElement.parentElement.parentElement;
+function delPetForm(currentButton) {
+	const petToRemove = currentButton.parentElement.parentElement.parentElement;
 	profiles.removeChild(petToRemove);
 }
+
+const saveButton = document.querySelector("#saveButton");
+saveButton.addEventListener('click', saveUserEdit);
+
+function saveUserEdit(e) {
+	
+}
+
+

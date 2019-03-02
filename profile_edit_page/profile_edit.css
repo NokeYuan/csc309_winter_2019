@@ -6,6 +6,8 @@ body {
 
 	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 
+	overflow-x: hidden;
+
 }
 
 
@@ -56,7 +58,9 @@ a {
 
 	font-size: 180%;
 
-	color: #170a45;
+	font-weight: bolder;
+
+	color: #5F9EA0;
 
 }
 
@@ -163,7 +167,7 @@ a {
 
 	display: block;
 
-	height: 430px;
+	height: 450px;
 
 	width: 100%;
 
@@ -312,6 +316,8 @@ a {
 	padding: 12px 24px;
 
 	border: none;
+
+	outline: none;
 
 	cursor: pointer;
 
