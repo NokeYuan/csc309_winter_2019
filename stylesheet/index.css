@@ -28,13 +28,13 @@ body {
 	color: #5F9EA0;
 }
 
- #navBar ul {
+#header .container ul {
 	list-style: none;
 	padding: 7px;
 	width: 100%;
 }
 
- #navBar ul li {
+ #header .container ul li {
 	display: inline-block;
 	font-size: 80%;
 }
