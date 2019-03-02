@@ -1,0 +1,293 @@
+.backgroundContainer {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: gray;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+#backgroundImage {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+#topWebName {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    display: inline;
+    margin-left: 10px;
+    color: #25374f;
+    font-size: 30px;
+}
+
+#topNavBar {
+    background-color: #FAF8F8;
+    height: 50px;
+}
+
+#topNavBar ul {
+	padding: 5px;
+    margin-left: 10px;
+    display: inline;
+}
+
+#topNavBar ul li {
+	list-style: none; /* No bullet points */
+	display: inline;
+}
+
+.navButton {
+	text-decoration: none;
+	padding: 10px;
+	color: #25374f;
+}
+
+.navButton:hover  {
+	color: Gold;
+	text-decoration: none;
+	padding: 10px;
+}
+
+#regularNameCard {
+    top: 360px;
+    height: 150px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px grey;
+    overflow: hidden;
+}
+
+.profileImageRatio {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#profileImage {
+    border-radius: 50%;
+    background-color: dimgray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#userName {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.postContainer {
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.verifiedIcon {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-top: -70px;
+    transform: rotate(-30deg);
+    margin-right: -15px;
+    position: relative;
+    mix-blend-mode: multiply;
+}
+
+.editButton {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 75px;
+    clear: right;
+    background: url(pencil-2.png) no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    position: relative;
+}
+
+.post {
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* padding-top: 75%; */
+    padding-bottom: 75%;
+    position: relative;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.postImageContainer {
+    margin-top: 0px;
+    width: 100%;
+    height: 60%;
+}
+
+.postImage {
+    width: 100%;
+    height: 60%;
+    margin-top: 0px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.postTextContainer {
+    width: 100%;
+    height: 40%;
+    margin-top: 60%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.postText {
+    font-size: 13px;
+    color: #25374f;
+}
+
+.editButton:hover {
+    border: none;
+    outline: none;
+    background-color: yellow;
+}
+
+.tabContainer {
+    margin-top: 60px;
+    position: absolute;
+    width: 178px;
+    left: 50%;
+    margin-left: -89px;
+    border-bottom: 1px solid #25374f;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    color: #ccc;
+}
+
+.tab button.active {
+    color: black;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+.tabText {
+    font-size: 16px;
+}
+
+.homestayContainer {
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    background-color: gray;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.homestayInfoContainer {
+    width: 60%;
+    height: 200px;
+    display: block;
+    left: 50%;
+    margin-left: -30%;
+    position: absolute;
+}
+
+.homestayImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accessibilityContainer {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.accessibilityContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.accessibilityContainer li{
+    margin-left: 20px;
+    margin-right: 20px;
+    object-fit: cover;
+    display: inline;
+}
+
+.accessibilityPics {
+    width: 30px;
+    height: 30px;
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B5B5B5;
+    text-align: center;
+    font-size: 13px;
+}
+
+.accessibilityDetail {
+    color: #25374f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}

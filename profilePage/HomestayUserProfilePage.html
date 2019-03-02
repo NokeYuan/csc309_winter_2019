@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Fluffy
+    </title>
+    <link rel="stylesheet" type="text/css" href="ProfilePageStyle.css" />
+</head>
+  <body>
+    <div id="topNavBar">
+        <div id="topWebName">
+                Fluffy
+        </div>
+        <ul>
+            <li>
+                <a class="navButton" href="">hot</a>
+            </li>
+            <li>
+                <a class="navButton" href="">new</a>
+            </li>
+            <li>
+                <a class="navButton" href="">rising</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="backgroundContainer">
+        <img id="backgroundImage" src="IMG_4537.jpg">
+    </div>
+    
+    <div id="regularNameCard">
+        <button type="button" class="editButton"></button>
+        <div id="profileImage">
+            <img class="profileImageRatio" src="regularUserProfileImage.png">
+        </div>
+        <center id="userName">User1</center>
+        <img class="verifiedIcon" src="verifiedIcon.png">
+    </div>
+    <div class="tabContainer">
+        <div class="tab" id="tab">
+            <button type="button" class="tablinks" onclick="openPosts(event, 'Posts')" id="defaultOpen"><span class="tabText">Posts</span></button>
+            <button type="button" class="tablinks" onclick="openHomestay(event, 'Homestay')"><span class="tabText">Homestay</span></button>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div id="Posts" class="tabcontent">
+        <div class="postContainer">
+            <div class="row">
+                <div class="column">
+                    <div class="post">
+                            <div class="postImageContainer">
+                                <img class="postImage" src="IMG_4537.jpg">
+                            </div>
+                            <div class="postTextContainer">
+                                <span class="postText">Cuteness here...</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="post">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Homestay" class="tabContent">
+        <div class="postContainer">
+            <div class="homestayInfoContainer">
+                <div class="accessibilityContainer">
+                    <ul>
+                        <li><img class="accessibilityPics" src="animal.png"></li>
+                        <li><img class="accessibilityPics" src="bathing.png"></li>
+                        <li><img class="accessibilityPics" src="animal-feed.png"></li>
+                        <li><img class="accessibilityPics" src="animal-shelter.png"></li>
+                    </ul>
+                </div>
+                <span class="description">Any user with paw print on the name card is a Pets Homestay. Following are details about this homestay.</span>
+                <br>
+                <span class="accessibilityDetail">Accessibility: Walking Dog, Bathing, Feeding, Day Care</span>
+                <br>
+                <span class="accessibilityDetail">Phone: 123-456-789</span>
+                <br>
+                <span class="accessibilityDetail">Email: user1@gmail.com</span>
+                <br>
+                <span class="accessibilityDetail">Address: 38 Elm St</span>
+                <img class="homestayImage" src="address.jpg">
+                <img class="homestayImage" src="livingRoom.png">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="ProfilePage.js"></script>
+  </body>
+</html>
