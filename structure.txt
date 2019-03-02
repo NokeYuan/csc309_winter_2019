@@ -1,0 +1,10 @@
+Login page -> main page
+
+main page: navBar -> Home 
+										-> Account ->regular user profile page
+															 ->homeStay user profile page	
+										-> Contact Us -> contactUs.html
+
+User Profile Page: edit -> profile edit page
+
+Profile edit: Save -> user Profile page
