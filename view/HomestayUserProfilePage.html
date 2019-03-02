@@ -4,19 +4,20 @@
     <title>
       Fluffy
     </title>
-    <link rel="stylesheet" type="text/css" href="ProfilePageStyle.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/ProfilePageStyle.css" />
     <link rel="stylesheet" type="text/css" href="../stylesheet/index.css" />
 </head>
   <body>
+      <!-- Nav Bar -->
         <div id="header">
                 <div class="container">
                     <div id="brand">Fluffy</div>
                     <ul id="navBar">
                         <li>
-                            <a class="navButton" href="">HOME</a>
+                            <a class="navButton" href="./MainPage.html">HOME</a>
                         </li>
                         <li>
-                            <a class="navButton" href="">ACCOUNT</a>
+                            <a class="navButton" href="./HomestayUserProfilePage.html">ACCOUNT</a>
                         </li>
                         <li>
                             <a class="navButton" href="">CONTACT US</a>
@@ -28,18 +29,18 @@
                     </ul>
                 </div>
             </div>
-
+    <!-- Backgound -->
     <div class="backgroundContainer">
-        <img id="backgroundImage" src="IMG_4537.jpg">
+        <img id="backgroundImage" src="../Image/IMG_4537.jpg">
     </div>
-    
+    <!-- Name Card -->
     <div id="regularNameCard">
-        <button type="button" class="editButton"><a href="./profile_edit.html"></a></button>
+        <a href="./profile_edit.html"><button type="button" class="editButton"></button></a>
         <div id="profileImage">
-            <img class="profileImageRatio" src="regularUserProfileImage.png">
+            <img class="profileImageRatio" src="../Image/regularUserProfileImage.png">
         </div>
         <center id="userName">User1</center>
-        <img class="verifiedIcon" src="verifiedIcon.png">
+        <img class="verifiedIcon" src="../Image/verifiedIcon.png">
     </div>
     <div class="tabContainer">
         <div class="tab" id="tab">
@@ -48,13 +49,14 @@
         </div>
     </div>
     <!-- Tab Content -->
+    <!-- Posts -->
     <div id="Posts" class="tabcontent">
         <div class="postContainer">
             <div class="row">
                 <div class="column">
                     <div class="post">
                             <div class="postImageContainer">
-                                <img class="postImage" src="IMG_4537.jpg">
+                                <img class="postImage" src="../Image/IMG_4537.jpg">
                             </div>
                             <div class="postTextContainer">
                                 <span class="postText">Cuteness here...</span>
@@ -76,16 +78,16 @@
             </div>
         </div>
     </div>
-
+    <!-- Homestay -->
     <div id="Homestay" class="tabContent">
         <div class="postContainer">
             <div class="homestayInfoContainer">
                 <div class="accessibilityContainer">
                     <ul>
-                        <li><img class="accessibilityPics" src="animal.png"></li>
-                        <li><img class="accessibilityPics" src="bathing.png"></li>
-                        <li><img class="accessibilityPics" src="animal-feed.png"></li>
-                        <li><img class="accessibilityPics" src="animal-shelter.png"></li>
+                        <li><img class="accessibilityPics" src="../Image/animal.png"></li>
+                        <li><img class="accessibilityPics" src="../Image/bathing.png"></li>
+                        <li><img class="accessibilityPics" src="../Image/animal-feed.png"></li>
+                        <li><img class="accessibilityPics" src="../Image/animal-shelter.png"></li>
                     </ul>
                 </div>
                 <span class="description">Any user with paw print on the name card is a Pets Homestay. Following are details about this homestay.</span>
@@ -97,11 +99,11 @@
                 <span class="accessibilityDetail">Email: user1@gmail.com</span>
                 <br>
                 <span class="accessibilityDetail">Address: 38 Elm St</span>
-                <img class="homestayImage" src="address.jpg">
-                <img class="homestayImage" src="livingRoom.png">
+                <img class="homestayImage" src="../Image/address.jpg">
+                <img class="homestayImage" src="../Image/livingRoom.png">
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="ProfilePage.js"></script>
+    <script type="text/javascript" src="../js/ProfilePage.js"></script>
   </body>
 </html>
