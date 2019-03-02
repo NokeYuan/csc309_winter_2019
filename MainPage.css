@@ -57,6 +57,7 @@ body{
 
 #UserSearchButton img{
 	height: inherit;
+	object-fit: cover;
 }
 
 /* Picture slid */
@@ -113,6 +114,7 @@ body{
 .PostingImage img{
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 .PostingTitle{
