@@ -1,0 +1,60 @@
+#UserPageHeader{
+	background-color: #f8f8f8;
+	height: 80px;
+	max-height: 80px;
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+}
+
+#HeaderText {
+	display: inline-block;
+	color: #243650;
+	font-size: 250%;
+	font-family: 'Crete Round';
+	font-weight: bold;
+	margin-left: 50px;
+	padding-top: 5px;
+}
+
+/* NavBar CSS */
+#NavBar{
+	display: inline-block;
+	margin-left: 60px;
+}
+
+.DropDownMenu{
+	position: relative;
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 150%;
+	font-family: 'Comic Sans MS';
+}
+
+.DropDownTitle{
+}
+
+.DropDownMenuContent{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #f8f8f8;
+}
+
+.DropDownItem{
+	text-decoration:none;
+	min-width: 100px;
+	max-width: 200px;
+}
+
+.DropDownItem a:hover{
+	color: yellow;
+}
+
+.DropDownItem a{
+	text-decoration:none;
+}
+
+.DropDownMenu:hover .DropDownMenuContent{
+	display: block;
+}

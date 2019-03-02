@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./MainPage.css">
 	<link rel="stylesheet" type="text/css" href="./postModal.css">
-	<link href='https://fonts.googleapis.com/css?family=Crete Round' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="./HeaderNavBar.css">
 </head>
 
 <body>
@@ -13,16 +13,16 @@
 	<!-- Make Post Modal -->
 	<div id="MakePostModal" class="modal">
 		<div id="MakePostModal-Container">
-			<div id="MakePostModal-Picture"></div>
-			<div id="MakePostModal-PostTitle">
-				<div class="circle"></div>
-				<input type="text" name="postTitle" placeholder="Write something...">
-				
-				<div class="UserPostButtonDiv">Post</div>
+			<div id="MakePostModal-Picture">
+				<img class="AddFilePic" src="./postModalAddPic.png">
 			</div>
+			<div id="MakePostModal-PostTitle">
+				<img class="circle" src="./postModalSearchCircle.png">
+				<input type="text" name="postTitle" placeholder="Write something...">
+			</div>
+			<div id="MakePostModal-Post" class="UserPostButtonDiv">Post</div>
 		</div>
 	</div>
-
 	<div id="FluffyApplication">
 		<!-- Fluffy Application page-->
 		<div id="UserPageHeader">
@@ -80,7 +80,6 @@
 		<div id="UserPostings">
 			<table id="UserPostingsTable">
 				<tbody>
-
 					<tr>
 						<td class="Posting">
 							<div class="PostingImage">
@@ -106,8 +105,6 @@
 							</div>
 							<div class="PostingTitle">Posting 4</div>
 						</td>
-
-
 					</tr>
 
 					<tr>
@@ -117,25 +114,20 @@
 							</div>
 							<div class="PostingTitle">Posting 5</div>
 						</td>
-						<td class="Posting">
-							<div class="PostingImage">
-								<img src="./samplePosts/samplePost6.jpg">
-							</div>
-							<div class="PostingTitle">Posting 6</div>
-						</td>
-						
 					</tr>
 
 				</tbody>
 			</table>
 		</div>
+	</div>
 
-		<div id="Fluffy footer"></div>
+	<img src="./sampleModal.jpg">
+	<div id="Fluffy footer"></div>
 
 
-		<!-- JS files -->
-		<script type="text/javascript" src="./MainPage.js"></script>
-		<script type="text/javascript" src="./loadPostings.js"></script>
-		<script type="text/javascript" src="./PostingModal.js"></script>
-	</body>
-	</html>
+	<!-- JS files -->
+	<script type="text/javascript" src="./PostingManager.js"></script>
+	<script type="text/javascript" src="./PostingModal.js"></script>
+	<script type="text/javascript" src="./MainPage.js"></script>
+</body>
+</html>
