@@ -12,7 +12,6 @@ body {
 
 .container {
 	max-width: 1440px;
-	padding-left: 95px;
 	padding-right: 95px;
 }
 
@@ -37,7 +36,7 @@ body {
 	font-size: 80%;
 }
 
-.navButton {
+#navButton {
 	margin-right: 20px;
 	font-size: 100%;
 	text-align: center;
