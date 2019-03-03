@@ -5,27 +5,27 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../stylesheet/index.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheet/mainPage.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheet/postModal.css">
 </head>
 
 <body>
 	<!-- Make/Check Post Modal -->
 	<div id="PostModal" class="modal">
-		<div id="PostModal-Container">
+		<form id="PostModal-Form">
 			<!-- Picture section of post modal-->
 			<div id="PostModal-Picture">
 				<img class="AddFilePic" src="../Image/postModalAddPic.png">
+				<input id="PostModal-ImgFileSelector" type="file" name="">
 			</div>
 			<!-- Title section of post modal-->
-			<div id="PostModal-SubmitPostTitle">
+			<div id="PostModal-PostTitle">
 				<img class="circle" src="../Image/postModalSearchCircle.png">
 				<input type="text" name="postTitle" placeholder="Write something...">
 			</div>
 			<!-- Comment section of post modal-->
 			<div id="PostModal-Comment"></div>
 			<!-- Submit the post or comment-->
-			<div id="PostModal-SubmitPost" class="UserPostButtonDiv">Post</div>
-		</div>
+			<input id="PostModal-SubmitPost" type="submit" name="" value="Post">
+		</form>
 	</div>
 
 	<!-- Fluffy Application page-->
