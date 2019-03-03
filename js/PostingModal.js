@@ -1,16 +1,16 @@
 'use strict';
 
 // get elements
-const postButton = document.querySelector('#UserPageHeader .UserPostButtonDiv');
-const postModal = document.querySelector('#MakePostModal');
-const submitPostButton = document.querySelector('#MakePostModal-Post');
+const postButton = document.querySelector('#newPostButtonDiv');
+const postModal = document.querySelector('#PostModal');
+const submitPostButton = document.querySelector('#PostModal-SubmitPost');
 
 postButton.addEventListener('click', showModal);
 window.addEventListener('click', closeModal);
 submitPostButton.addEventListener('click', addPost);
 
 // testing posting object
-const newPosting = new Posting('./samplePosts/samplePost1.jpg','Posting1','comment1');
+const newPosting = new Posting('../Image/samplePost1.jpg','Posting1','comment1');
 
 
 function showModal(e){
@@ -24,6 +24,8 @@ function closeModal(e){
 }
 
 function addPost(){
+
+
 	(new PostingManager(document.querySelector('#UserPostingsTable'), 4)).appendPostingDOM(newPosting);
 	postModal.style.display = 'none';
 }

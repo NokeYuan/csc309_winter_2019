@@ -9,52 +9,52 @@
 </head>
 
 <body>
-	<!-- fix positioned div-->
-	<!-- Make Post Modal -->
-	<div id="MakePostModal" class="modal">
-		<div id="MakePostModal-Container">
-			<div id="MakePostModal-Picture">
+	<!-- Make/Check Post Modal -->
+	<div id="PostModal" class="modal">
+		<div id="PostModal-Container">
+			<!-- Picture section of post modal-->
+			<div id="PostModal-Picture">
 				<img class="AddFilePic" src="../Image/postModalAddPic.png">
 			</div>
-			<div id="MakePostModal-PostTitle">
+			<!-- Title section of post modal-->
+			<div id="PostModal-SubmitPostTitle">
 				<img class="circle" src="../Image/postModalSearchCircle.png">
 				<input type="text" name="postTitle" placeholder="Write something...">
 			</div>
-			<div id="MakePostModal-Post" class="UserPostButtonDiv">Post</div>
+			<!-- Comment section of post modal-->
+			<div id="PostModal-Comment"></div>
+			<!-- Submit the post or comment-->
+			<div id="PostModal-SubmitPost" class="UserPostButtonDiv">Post</div>
 		</div>
 	</div>
 
 	<!-- Fluffy Application page-->
 	<div id="FluffyApplication">
-		<div id="UserPageHeader">
-			<div id="header">
-				<div class="container">
-					<div id="brand">Fluffy</div>
-					<ul>
-						<li>
-							<a class="navButton" href="./MainPage.html">HOME</a>
-						</li>
-						<li>
-							<a class="navButton" href="./HomestayUserProfilePage.html">ACCOUNT</a>
-						</li>
-						<li>
-							<a class="navButton" href="">CONTACT US</a>
-						</li>
-						<li>
-							<!-- User Post Button-->
-							<div class="UserPostButtonDiv">
-								Post
-							</div>
-						</li>
-						<li class="searchForm">
-							<input id="searchButton" type="text" name="search" placeholder="Search..">
-							<button id="searchIcon" type="submit"></button>
-							<!--<input id="searchIcon" src="./searchIcon.png" type="image" name="submit"> -->
-						</li>
-					</ul>
-				</div>
+		<div id="header">
+			<div class="container">
+				<div id="brand">Fluffy</div>
+				<ul>
+					<li>
+						<a class="navButton" href="./MainPage.html">HOME</a>
+					</li>
+					<li>
+						<a class="navButton" href="./HomestayUserProfilePage.html">ACCOUNT</a>
+					</li>
+					<li>
+						<a class="navButton" href="./ContactPage.html">CONTACT US</a>
+					</li>
+					<li>
+						<!-- User Post Button-->
+						<div id="newPostButtonDiv">
+							Post
+						</div>
+					</li>
+					<li class="searchForm">
+						<input id="searchButton" type="text" name="search" placeholder="Search..">
+						<button id="searchIcon" type="submit"></button>
+					</li>
+				</ul>
 			</div>
-
 		</div>
 
 		<div id="UserPagePictureSlids">
