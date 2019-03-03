@@ -5,10 +5,11 @@ function Posting(imgSrc, title, comment){
 	this.imgSrc = imgSrc;
 	this.title = title;
 	this.comment = comment;
+	this.owner = "user1";
 }
 
-function PostingManager(tableDom, maxPostingPerRow){
-	this.tableDom = tableDom;
+function PostingManager(postingContainer, maxPostingPerRow){
+	this.postingContainer = postingContainer;
 	this.maxPostingPerRow = maxPostingPerRow;
 }
 
@@ -18,15 +19,17 @@ PostingManager.prototype = {
 		this.appendPostingDOM(newPosting);
 	},
 
-	getPostingsInTable: function(){
+	getPostingsInContainer: function(){
 		const postingArray = new Array();
-		const postingRows = Array.from(this.tableDom.querySelectorAll('tbody tr'));
-		console.log(postingRows);
+		const postingRows = Array.from(this.postingContainer.querySelectorAll('.row'));
+		// loop through each row of postings
 		postingRows.forEach((tr, index, array)=>{
 			const postingTds = Array.from(tr.children);
 			postingTds.forEach((td, tdIndex, tdArray)=>{
-				const postingImgSrc = td.querySelector('.PostingImage img').getAttribute('src');
-				const postingTitle = td.querySelector('.PostingTitle').innerHTML;
+				const postingDiv = td.querySelector('.post')
+				// get properties of each posting and add to array
+				const postingImgSrc = postingDiv.querySelector('.postImageContainer .postImage').getAttribute('src');
+				const postingTitle = postingDiv.querySelector('.postTextContainer .postText').innerHTML;
 				const postingComment = ''; // TODO decide where the commet is
 				postingArray.push(new Posting(postingImgSrc, postingTitle, postingComment));
 			});
@@ -47,7 +50,7 @@ PostingManager.prototype = {
 
 	// append Postings to the DOM
 	appendPostingDOM: function (newPosting){
-		const postingRows = this.tableDom.querySelectorAll('tbody tr');
+		const postingRows = this.postingContainer.querySelectorAll('.row');
 		const lastPostingRow = postingRows[postingRows.length-1];
 
 		// create dom td element for the posting
@@ -55,9 +58,10 @@ PostingManager.prototype = {
 		// check whether to append to last row or create a new row
 		if(lastPostingRow.children.length >= this.maxPostingPerRow){
 			// create a new tr and append to it
-			const newTr = document.createElement('tr');
-			newTr.appendChild(newPostingDom);
-			this.tableDom.querySelector('tbody').appendChild(newTr);
+			const newRow = document.createElement('div');
+			newRow.classList.add('row');
+			newRow.appendChild(newPostingDom);
+			this.postingContainer.appendChild(newRow);
 		}
 		else{
 		// append to the last row
@@ -66,23 +70,31 @@ PostingManager.prototype = {
 	},
 
 	createPostingDomTD : function (newPosting){
-		const td = document.createElement('td');
-		td.classList.add('Posting');
+		const column = document.createElement('div');
+		column.classList.add('column')
+		const newPostDiv = document.createElement('div');
+		newPostDiv.classList.add('post');
 
 		// create posting image section Dom
 		const postingImageDiv = document.createElement('div');
-		postingImageDiv.classList.add('PostingImage');
+		postingImageDiv.classList.add('postImageContainer');
 		const postingImg = document.createElement('img');
+		postingImg.classList.add('postImage');
 		postingImg.setAttribute('src', newPosting.imgSrc);
 		postingImageDiv.appendChild(postingImg);
 
 		// create posting title section Dom
 		const postingTitleDiv = document.createElement('div');
-		postingTitleDiv.classList.add('PostingTitle');
-		postingTitleDiv.appendChild(document.createTextNode(newPosting.title));
+		postingTitleDiv.classList.add('postTextContainer');
+		const postingTextSpan = document.createElement('span');
+		postingTextSpan.classList.add('postText');
+		postingTextSpan.appendChild(document.createTextNode(newPosting.title));
+		postingTitleDiv.appendChild(postingTextSpan);
 
-		td.appendChild(postingImageDiv);
-		td.appendChild(postingTitleDiv);
-		return td;
+		newPostDiv.appendChild(postingImageDiv);
+		newPostDiv.appendChild(postingTitleDiv);
+
+		column.appendChild(newPostDiv);
+		return column;
 	}
 }

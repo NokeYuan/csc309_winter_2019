@@ -1,6 +1,6 @@
 'use strict';
 
-const postingTable = document.querySelector('#UserPostingsTable');
+const postingTable = document.querySelector('.postContainer');
 const maxPostingPerRow = 4;
 
 const postingManager = new PostingManager(postingTable, maxPostingPerRow);
