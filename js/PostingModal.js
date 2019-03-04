@@ -1,18 +1,23 @@
 'use strict';
+// constants
+const postingRootDom = '.postContainer';
+
 // get elements
 const postButton = document.querySelector('#newPostButtonDiv');
 const postModal = document.querySelector('#PostModal');
 // post form elements
 const postModalForm = document.querySelector('#PostModal-Form');
 const postImgDiv = document.querySelector('#PostModal-Picture');
+const postImg = document.querySelector('#PostModal-Picture .AddFilePic');
 const postImageFileSelector = document.querySelector('#PostModal-ImgFileSelector');
+const postTitleText = document.querySelector('#PostModal-PostTitle .PostModal-PostTitleText');
 const submitPostButton = document.querySelector('#PostModal-SubmitPost');
 
 
 postButton.addEventListener('click', showModal);
 window.addEventListener('click', closeModal);
-postImageFileSelector.addEventListener('change', parsePostImg);
-postModalForm.addEventListener('submit', parsePostImg);
+postImageFileSelector.addEventListener('change', previewImg);
+postModalForm.addEventListener('submit', postNewPosting);
 
 
 // post modal displays
@@ -30,30 +35,35 @@ function closeModal(e){
 // posting parsing and post
 // dragover files to upload img
 postImgDiv.addEventListener('click', function(e){
-	console.log('click');
 	postImageFileSelector.click();
 });
 
-
-function parsePostImg(e){
+// preview the img when uploaded
+function previewImg(e){
 	e.preventDefault();
 
 	const newPostImgFile = postImageFileSelector.files[0];
 	// read the img url
 	const fileReader = new FileReader();
+	fileReader.readAsDataURL(newPostImgFile);
 
 	fileReader.onload = ()=>{
-		const newPosting = new Posting(fileReader.result,'Posting1','comment1');
-		addPost(newPosting);
+		postImg.setAttribute('src', fileReader.result);
 	}
-	fileReader.readAsDataURL(newPostImgFile);
 
 }
 
 
-function addPost(newPost){
-
-
-	(new PostingManager(document.querySelector('#UserPostingsTable'), 4)).appendPostingDOM(newPost);
-	postModal.style.display = 'none';
+function postNewPosting(e){
+	e.preventDefault();
+	const fr = new FileReader();
+	fr.readAsDataURL(postImageFileSelector.files[0]);
+	fr.onload = function(e){
+		const newPostImgSrc = fr.result;
+		const newPostTitle = postTitleText.value;
+		const newPostComment = "";
+		const newPost = new Posting(newPostImgSrc, newPostTitle, newPostComment);
+		(new PostingManager(document.querySelector(postingRootDom), 4)).appendPostingDOM(newPost);
+		postModal.style.display = 'none';
+	}
 }
